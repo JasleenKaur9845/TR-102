@@ -1,0 +1,115 @@
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: right; /* changed to space-between for better responsiveness */
+    background-color: rgb(133, 129, 129);
+    height: 10vh; /* changed to vh units for better responsiveness */
+    margin-bottom: auto;
+  }
+  
+  nav a {
+    color: whitesmoke;
+    padding: 1rem 2rem; /* changed to rem units for better responsiveness */
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: rgb(139, 174, 189);
+  }
+  
+  #logo {
+    float: left;
+    margin-right: 1rem; /* added margin-right for better responsiveness */
+  }
+  
+  /* Parent Styles */
+  
+  .parent {
+    display: flex;
+    flex-wrap: wrap; /* added flex-wrap for better responsiveness */
+  }
+  
+  /* Aside, Content, and Video Styles */
+  
+  .aside, .video {
+    flex: 1;
+    background-color: rgb(101, 171, 192);
+    padding: 1rem; /* added padding for better responsiveness */
+   
+  }
+  .aside li{
+    list-style-type: none;
+  }
+  .aside li a{
+   font-size: 24px;
+    text-decoration: none;
+    color: white;
+  }
+  .aside li a:hover {
+    color: rgb(2, 2, 2);
+  }
+  
+  .content {
+    flex: 2;
+    width: 100%;
+    height: 500px;
+    
+    padding: 1rem; /* added padding for better responsiveness */
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+    display: flex;
+    background-color: rgb(133, 129, 129);
+    color: white;
+    justify-content: center;
+    padding: 1rem; /* added padding for better responsiveness */
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+    nav a {
+      padding: 1rem;
+    }
+    .parent {
+      flex-direction: column;
+    }
+    .aside, .video, .content {
+      width: 100%;
+      margin: 1rem 0;
+    }
+    footer {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav ul {
+      flex-direction: column;
+    }
+    nav a {
+      padding: 0.5rem;
+    }
+    .parent {
+      flex-direction: column;
+    }
+    .aside, .video, .content {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+    footer {
+      padding: 0.5rem;
+    }
+  }
+  body {
+    background-color: #837960;
+    background-image: linear-gradient(to top, transparent, #ffffff), url("TRAVEL.buddy.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  
+}
